@@ -75,7 +75,7 @@ const empireStateBuilding = {
 // Lightning Exercises 1: Use dot notation to output all of the dimensions of the Empire State Building to the console.
 // console.log(empireStateBuilding.stories, height, squareFeet, eastWestLength, northSouthLength)
 
-console.log(`The Empire State Building is ${stories} stories.`)
+console.log(`The Empire State Building is ${empireStateBuilding.stories} stories.`)
 console.log('stories', empireStateBuilding.stories)
 console.log(empireStateBuilding.height)
 console.log(empireStateBuilding.squareFeet)
@@ -159,4 +159,23 @@ const beatles = {
             death: null
         }
     ]
+}
+
+
+
+// So far, you've been largely accessing string and integer values in an object. However, values can be anything in the JavaScript language - including arrays. Consider this example.
+const kennel = {
+    name: "Nashville North Kennels",
+    address: "100 Demonbreun Road",
+    manager: "Harper Frankstone",
+    capacity: 50,
+    currentAnimals: ["Jet", "Snickers", "Blue", "Jacks", "Flap", "Barnum"]
+}
+
+// If you want to display all of the animals that are currently being boarded, you first have to access the array. You can use dot notation to get that value.
+
+const boardedAnimals = kennel.currentAnimals
+
+for (let i = 0; i < boardedAnimals.length: i++) {
+    console.log(boardedAnimals[i])
 }
